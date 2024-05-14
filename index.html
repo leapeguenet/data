@@ -8,17 +8,17 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f7f7f7;
+            background-color: #f4f4f4;
             color: #333;
         }
         header {
-            background-color: #f2dede;
+            background-color: #fce6e6;
             color: #333;
             padding: 20px;
             text-align: center;
         }
         nav {
-            background-color: #f2dede;
+            background-color: #fce6e6;
             padding: 10px;
             text-align: center;
         }
@@ -29,7 +29,7 @@
             margin: 0 5px;
         }
         nav a:hover {
-            background-color: #e6b3b3;
+            background-color: #f8cbcb;
         }
         section {
             padding: 20px;
@@ -38,13 +38,31 @@
             border-radius: 10px;
         }
         footer {
-            background-color: #f2dede;
+            background-color: #fce6e6;
             color: #333;
             padding: 20px;
             text-align: center;
             position: fixed;
             bottom: 0;
             width: 100%;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .item {
+            flex-basis: 30%;
+            margin-bottom: 20px;
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #f8f8f8;
+        }
+        .item img {
+            max-width: 100%;
+            border-radius: 5px;
         }
     </style>
 </head>
@@ -64,12 +82,44 @@
 
 <section>
     <h2>Nouveautés</h2>
-    <p>Découvrez nos dernières créations en matière de bijoux. Des pièces uniques et élégantes, parfaites pour toutes les occasions.</p>
+    <div class="container">
+        <div class="item">
+            <img src="bijou1.jpg" alt="Bijou 1">
+            <h3>Boucles d'oreilles</h3>
+            <p>Élégantes et raffinées, parfaites pour toutes les occasions.</p>
+        </div>
+        <div class="item">
+            <img src="bijou2.jpg" alt="Bijou 2">
+            <h3>Colliers</h3>
+            <p>Des colliers uniques qui ajoutent une touche de glamour à votre tenue.</p>
+        </div>
+        <div class="item">
+            <img src="bijou3.jpg" alt="Bijou 3">
+            <h3>Bracelets</h3>
+            <p>Des bracelets tendance pour compléter votre look.</p>
+        </div>
+    </div>
 </section>
 
 <section>
     <h2>Promotions en cours</h2>
-    <p>Profitez de nos offres spéciales sur une sélection de bijoux. Des réductions exceptionnelles vous attendent !</p>
+    <div class="container">
+        <div class="item">
+            <img src="promo1.jpg" alt="Promotion 1">
+            <h3>Promotion spéciale</h3>
+            <p>Profitez de -20% sur toute la collection printemps !</p>
+        </div>
+        <div class="item">
+            <img src="promo2.jpg" alt="Promotion 2">
+            <h3>Offre limitée</h3>
+            <p>Achetez un bracelet, obtenez une paire de boucles d'oreilles gratuitement !</p>
+        </div>
+        <div class="item">
+            <img src="promo3.jpg" alt="Promotion 3">
+            <h3>En exclusivité en ligne</h3>
+            <p>Découvrez notre nouvelle collection avant tout le monde !</p>
+        </div>
+    </div>
 </section>
 
 <footer>
